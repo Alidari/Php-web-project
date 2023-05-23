@@ -1,0 +1,478 @@
+ * {
+     font-family: 'Berlin Sans FB';
+ }
+
+ html {
+     scroll-behavior: smooth;
+ }
+
+ body {
+     background-color: #202634;
+ }
+
+ .white {
+     color: white;
+ }
+
+ .navbar {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: row;
+     height: 11vh;
+     background-color: #283044;
+     margin-bottom: 2em;
+ }
+
+ .navbar nav {
+     display: flex;
+     align-items: center;
+     width: 100%;
+     height: 1vh;
+     flex-direction: row;
+     justify-content: space-between;
+     margin: 1rem;
+ }
+
+ .navbar ul {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     list-style: none;
+     flex-direction: row;
+ }
+
+ .navbar li {
+     margin: 1em;
+ }
+
+ .navlink {
+     position: relative;
+     color: white;
+     text-decoration: none;
+     opacity: 0.7;
+     margin: 0em;
+ }
+
+ .navbar-logo {
+     height: 1000%;
+ }
+
+ .navbar-logo img {
+     height: 100%;
+     ;
+     margin-left: 1.5em;
+ }
+
+ .navlink::before {
+     content: "";
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 0;
+     height: 1.5px;
+     background-color: white;
+     transition: width 0.3s ease-in-out;
+ }
+
+ .navlink:hover::before {
+     width: 100%;
+ }
+
+ .general {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     margin: 0 auto;
+
+ }
+
+ .container .container-body {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 100%;
+ }
+
+ .slider {
+     display: flex;
+     flex-direction: column;
+     width: 70%;
+     height: 50%;
+     margin-bottom: 3em;
+ }
+
+ .baslik {
+     display: flex;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: 1.5rem;
+     margin-right: auto;
+ }
+
+ .carousel {
+     margin-top: 2em;
+ }
+
+ .general-games {
+     display: flex;
+     justify-content: flex-end;
+     position: relative;
+     margin-right: auto;
+     width: 100%;
+     /* align-items: center; */
+     /* justify-content: center; */
+ }
+
+ .games {
+     display: flex;
+     height: 20em;
+     flex-direction: column;
+     margin-right: auto;
+     color: white;
+     margin: 1em;
+ }
+
+ a {
+     text-decoration: none;
+     color: white;
+ }
+
+ .game-body:hover {
+     text-decoration: underline;
+ }
+
+ .top-5 {
+     display: flex;
+     position: relative;
+     margin-right: auto;
+     width: 20em;
+     height: 100vh;
+     background-color: #283044;
+     border-radius: 4em;
+ }
+
+ .games .game-body {
+     display: flex;
+     height: 50%;
+     width: 90%;
+     flex-direction: row;
+     align-items: center;
+     margin-right: auto;
+     margin: 2em 0;
+ }
+
+ .game-img {
+     display: flex;
+     position: relative;
+     width: 30%;
+
+ }
+
+ .meta-score {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: absolute;
+     height: 2.5em;
+     width: 2.5em;
+     border-radius: 15px;
+     bottom: 10px;
+     left: 10px;
+ }
+
+ .game-img img {
+     border-radius: 15%;
+ }
+
+ .game-detail {
+     margin: 2em;
+     margin-right: auto;
+     font-size: 1.5rem;
+     color: white;
+ }
+
+ .gaa {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .games .game-body .game-detail-body {
+     font-size: 0.75rem;
+     opacity: 0.5;
+ }
+
+ .dropdown {
+     position: relative;
+     display: inline-block;
+ }
+
+ .dropdown .dropdown-menu {
+     display: none;
+     position: absolute;
+     z-index: 1;
+ }
+
+ .dropdown:hover .dropdown-menu {
+     display: block;
+ }
+
+ /* ACCOUNT SECTION */
+
+ .acount-main {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 100vh;
+     margin: 0 1em;
+ }
+
+ .back {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 2.5em;
+     height: 2.5em;
+     align-self: flex-start;
+     border-radius: 9px;
+     margin-top: 2em;
+ }
+
+ .back:hover {
+     background-color: #4c525f;
+ }
+
+ .acount-main .info {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+     height: 60%;
+     width: 60%;
+     margin: 5em;
+     background-color: #8087971d;
+     border-radius: 5%;
+ }
+
+ .acount-main form {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .acount-main .info input {
+     width: 100%;
+     border-radius: 1em;
+ }
+
+ .acount-main .info .personel-info {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+     width: 60%;
+ }
+
+ .hesap-sil {
+     display: none;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+ }
+
+ .hesapsil-buttons {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 2em;
+ }
+
+ .hesapsil-buttons input {
+     border-radius: 5px;
+     background-color: #303643;
+     margin-bottom: 2em;
+ }
+
+ .hesapsil-buttons button {
+     margin: 0 2em;
+     width: 50%;
+ }
+
+
+ /* GAME SECTION */
+
+ .gamereview-title {
+     margin: 2em;
+ }
+
+ .gamerewiev-body {
+     display: flex;
+     background-color: #14141867;
+ }
+
+ .skor-general {
+     display: flex;
+
+ }
+
+ .skors {
+     display: flex;
+     justify-content: space-around;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .skor {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 0.75em 5em;
+     width: 2.5em;
+     height: 2.5em;
+     background-color: #4c525f;
+ }
+
+ .aciklama {
+     width: 70%;
+     margin: 3em;
+ }
+
+ .gamerewiev-atribute {
+     display: flex;
+     justify-content: space-around;
+     margin-top: 1em;
+ }
+
+ .puanlama {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    width: 10em;
+    text-align: center;
+ }
+ .puanlama form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .rating {
+     display: inline-block;
+ }
+
+ .rating input[type="radio"] {
+     display: none;
+ }
+
+ .rating label {
+     color: #ddd;
+     font-size: 24px;
+     float: right;
+     cursor: pointer;
+ }
+
+ .rating label i {
+     transition: color 0.3s;
+ }
+
+ .rating input[type="radio"]:checked~label i:before {
+     content: "\f005";
+     color: gold;
+ }
+
+ .comments {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     margin-top: 3em;
+     width: 100%;
+     background-color: #14141867;
+ }
+
+ .comments form {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 80%;
+ }
+
+ .comments .title {
+     align-self: flex-start;
+     margin-left: 3em;
+     margin-top: 3em;
+ }
+
+ .comments input {
+     background-color: #4c525f;
+     border-radius: 0.5em;
+     margin: 2em;
+ }
+
+ .comments .user-commnet {
+     display: flex;
+     width: 70%;
+     margin-right: 10em;
+ }
+
+ .comments .user-commnet .pp {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 2em;
+     height: 2em;
+     background-color: #4c525f;
+     border-radius: 2em;
+     margin: 1em;
+ }
+
+ .comments .user-commnet .commnet-text {
+     background-color: #4c525f;
+     padding: 0.5em;
+     border-radius: 1em;
+     width: 100%;
+ }
+
+ /* GAMES SECTION */
+
+ .games-php {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .games-php .game {
+     position: relative;
+     margin: 1em;
+ }
+
+ .games-php .game img {
+     border-radius: 2.5em;
+     transition: transform 0.3s ease;
+ }
+
+ .game:hover img {
+     transform: scale(1.1);
+ }
+
+ footer{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 20em;
+    background-color: #181819;
+    margin-top: auto;
+ }

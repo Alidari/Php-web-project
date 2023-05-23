@@ -1,0 +1,93 @@
+body{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #202634;
+    color: white;
+ }
+
+ .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+ }
+ .form-control{
+    background-color: #282d39;
+    border: 1px solid #474a4f;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    color:rgb(183, 175, 175);
+ }
+ .form-control:hover{
+    background-color: #303643;
+ }
+ .form-control:focus{
+    background-color: #303643;
+    color:rgb(183, 175, 175);
+ }
+ .form-control::placeholder{
+    color: #585e69;
+ }
+ .input{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+ }
+.password{
+    flex-wrap: wrap;
+}
+.warning p{
+    color:#ffc35ad0;
+    margin-right: auto;
+    font-size: 0.75rem;
+}
+
+ .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5em;
+    height: 2.4em;
+    background-color: #585e69;
+    border: 1px solid #474a4f;
+    border-right: 0;
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+ }
+ .name-surname{
+    display: flex;
+
+ }
+input{
+    color:white;
+}
+.text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color:rgb(183, 175, 175);
+    text-decoration: none;
+    margin: 0.75em auto;
+}
+.container .sucsess{
+   text-align: center;
+}
+.alert-danger{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 1em auto;
+   width: 60%;
+   height: 5vh;
+   font-size: 1rem;
+}
+
