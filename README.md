@@ -18,4 +18,6 @@ Ardından phpmyadminden içe aktar diyerek "sql" klasörü içindeki rog dosyas�
 
 localhost'unuzu açtığınızda dosyamıza girince web sayfamızla karşılaşıyor olmanız lazım.
 
+detaylı anlatım:https://youtu.be/4aHMdAULzCQ
+
  
